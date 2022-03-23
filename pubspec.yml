@@ -4,11 +4,14 @@ phases:
   install: 
     runtime-versions: 
       - nodejs: 14
-    commands: 
-      - npm install
+  
   build: 
     commands: 
-      - echo Compiling code
-artifacts:
-  files: 
-    - '**/*'
+      - npm install
+     
+  post_build:
+    commands:
+      - pm2 start server.js
+# artifacts:
+#   files: 
+#     - '**/*'
