@@ -2,4 +2,4 @@
 apt-get -y update
 
 sudo rm -rf node_modules package-lock.json
-npm install 
+sudo npm install forever -g
