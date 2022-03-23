@@ -4,10 +4,13 @@ phases:
   install: 
     runtime-versions: 
       nodejs: 14.10.0
+    commands:
+      - npm install pm2@latest -g
   
   build: 
     commands: 
-      - npm install
+      - sudo rm -rf node_modules package-lock.json
+      - npm install   
      
   post_build:
     commands:
