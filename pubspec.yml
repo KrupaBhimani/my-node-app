@@ -15,6 +15,6 @@ phases:
   post_build:
     commands:
       - pm2 start server.js
-# artifacts:
-#   files:
-#     - '**/*'
+artifacts:
+   files:
+     - '**/*'
