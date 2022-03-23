@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files: 
   - source: /
-    destination: /my-node-app
+    destination: /home/ubuntu/my-node-app
 
 hooks:
   BeforeInstall: 
