@@ -1,0 +1,15 @@
+version: '3.2'
+volumes:
+  vol2:
+services:
+  node:
+    container_name: node-compose
+    image: node-compose
+    build: 
+      context: .
+    environment:
+      - ENV_NODE=production
+    ports:
+      - "5000:3000"
+    volumes:
+      - vol2:/practical/logs
